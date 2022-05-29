@@ -1,0 +1,99 @@
+.todo-container {
+  background-color: lightgoldenrodyellow;
+  padding: 20px;
+  display: inline-block;
+  justify-content: center;
+  margin-left: 33%;
+  width: 420px;
+}
+.strikethrough {
+  text-decoration: line-through;
+}
+
+button {
+  cursor: pointer;
+}
+
+.todo-list-item {
+  list-style-type: none;
+}
+
+.todo-input {
+  border: none;
+  background-color: lightgray;
+  height: 50px;
+  font-size: 20px;
+  display: inline-block;
+}
+
+.todo-add-button {
+  margin-top: 20px;
+  margin-left: 20px;
+  border: none;
+  border-radius: 5px;
+  width: 150px;
+  height: 53px;
+  background-color: lightcoral;
+  font-weight: 700;
+  font-size: 20px;
+  color: #fff;
+  transition: 0.2s;
+  display: inline-block;
+}
+
+.todo-add-button:hover {
+  opacity: 0.7;
+}
+
+.todo-done-button {
+  border: 1px solid green;
+  border-radius: 20px;
+  width: 100px;
+  height: 30px;
+  background-color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+  color: green;
+  transition: 0.2s;
+  margin-left: 20px;
+  float: right;
+}
+
+.todo-done-button:hover {
+  opacity: 0.7;
+}
+
+.todo-remove-button {
+  border: 1px solid red;
+  border-radius: 20px;
+  width: 100px;
+  height: 30px;
+  background-color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+  color: red;
+  transition: 0.2s;
+  margin-left: 20px;
+  float: right;
+}
+
+.todo-remove-button:hover {
+  opacity: 0.7;
+}
+
+.todo-list-item {
+  color: #000;
+  font-size: 25px;
+  margin-left: 0;
+  margin-top: 0;
+  border-left: 4px solid black;
+  padding-left: 10px;
+}
+
+.todo-list-items {
+  padding-left: 0px;
+}
+
+hr {
+  margin-top: 20px;
+}

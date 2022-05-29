@@ -1,0 +1,37 @@
+<div class="todo-container">
+  <h1>Todo List</h1>
+  <input
+    type="text"
+    class="todo-input"
+    placeholder="Enter todo"
+    [(ngModel)]="todoItem"
+  />
+  <button type="button" class="todo-add-button" (click)="onAddTodo()">
+    Add Todo
+  </button>
+  <hr *ngIf="todosArray.length" />
+  <div class="todo-list">
+    <ul class="todo-list-items" *ngFor="let todo of todosArray; let i = index">
+      <li class="todo-list-item" [class.strikethrough]="!todo.showDoneButton">
+        {{ todo.todoTask }}
+        <button
+          type="button"
+          *ngIf="todo.showDoneButton"
+          class="todo-done-button"
+          (click)="onDoneTodo(todo)"
+        >
+          Done
+        </button>
+        <button
+          type="button"
+          *ngIf="todo.showRemoveButton"
+          class="todo-remove-button"
+          (click)="onRemoveTodo(i)"
+        >
+          Remove
+        </button>
+      </li>
+    </ul>
+    <h2 *ngIf="!todosArray.length">All items completed!</h2>
+  </div>
+</div>
